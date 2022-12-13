@@ -1,0 +1,12 @@
+{
+    "states": {
+        "lamps_state": false,
+        "pump_state": false,
+        "manual": true
+    },
+    "settings": {
+        "start": "12:20",
+        "end": "16:21",
+        "waterings": []
+    }
+}

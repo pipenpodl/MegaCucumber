@@ -1,0 +1,45 @@
+
+body{
+ background-color: #2b2b2b;
+}
+
+
+.App {
+  margin: 0 auto;
+  background-color: #2b2b2b;
+  max-width: 180vh;
+  min-height: 90vh;
+  margin-right: 4%;
+  margin-left: 4%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border-radius: 20px;
+  display: grid;
+  grid-template-areas: 'one two';
+  box-shadow: -6px -6px 12px #313131, 6px 6px 12px #212121;
+}
+
+@media only screen and (max-width: 1100px) {
+  .App {
+    grid-template-areas: 'two' 'one';
+  }
+  *{
+		font-size: 15px;
+	}
+}
+
+.Main-one {
+  display: grid;
+  grid-area: one;
+  grid-template-rows: 1fr 1fr;  
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+

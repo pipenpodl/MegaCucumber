@@ -1,0 +1,53 @@
+.Main_one {
+	display: grid;
+	grid-area: one;
+	grid-template-rows: 1fr 1fr; 
+	grid-template-columns: 1fr; 
+  }
+.Main_light_button{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.Main_water{
+  background-color: #2b2b2b;
+  border-radius: 40px;
+  margin: 20px;
+  text-align: center;
+  display: grid;
+  grid-template-rows: 0.5fr 3fr 0.5fr;
+  color: white;
+  box-shadow: -6px -6px 12px #313131, 6px 6px 12px #212121;
+}
+.water_info{
+	padding: 5px;
+}	
+.block_add {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-self: center;
+	align-items: end;
+  }
+.but{
+	margin-right: 5px;
+	margin-left: 5px;
+	display: inline-block;
+	height: 50px;
+	border-radius: 20px 20px 0px 0px;
+	border: none;
+	color: white;
+	background-color: #404040;
+	box-shadow: -6px -6px 12px #353535, 6px 6px 12px #212121;
+	border: 2px solid rgb(36, 36, 36);
+	margin-top: 15px;
+
+
+  }
+.but:hover{
+	opacity: 0.7;
+	cursor: pointer;
+}
+.but:active{
+	opacity: 0.7;
+	border: solid 5px #BAABAB;
+}

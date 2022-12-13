@@ -1,0 +1,45 @@
+.table{
+	margin-top: 30px;
+	background-color: white;
+	padding: 5px;
+	font-size: 20px;
+	overflow: scroll;
+	max-height: 460px;
+	color: black;
+}
+
+.watering_item{
+	display: grid;
+	grid-template-columns: 1fr;
+	margin-top: 10px;
+	background-color: white;
+	padding: 5px;
+	color: black;
+	background-color: #DCDCDC;
+}
+.titles_item{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+.title{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+.button_drop{
+	justify-self: center;
+	
+}
+.button_drop:hover{
+	cursor: pointer;
+}
+
+
+@media only screen and (max-width: 1100px) {
+	.App {
+	  grid-template-areas: 'two' 'one';
+	}
+	*{
+		  font-size: 15px;
+	  }
+  }
+  

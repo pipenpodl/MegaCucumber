@@ -1,0 +1,68 @@
+
+.myModal{
+	position: fixed;
+	background-color: rgba(0, 255, 0, 0);
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: none;
+	backdrop-filter: blur(2px);
+}
+
+
+.myModal.active{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.content{
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: 1fr;
+	border: 1px solid black;
+	font-size: 20px;
+	padding: 10px;
+	background-color: #404040;
+	box-shadow: -6px -6px 12px #353535, 6px 6px 12px #212121;
+	border: 2px solid rgb(36, 36, 36);
+	margin-top: 15px;
+	color: white;
+	border-radius: 40px;
+	padding: 15px;
+
+}
+
+.er{
+	color: red;
+}
+.content > div > input{
+	width: 120px;
+	font-size: 20px;
+}
+.add_but{
+	font-size: 20px;
+	border: 1px solid black;
+	padding: 5px;
+}
+.add_but{
+		margin-right: 5px;
+		margin-left: 5px;
+		height: 50px;
+		border-radius: 20px 20px 20px 20px;
+		border: none;
+		color: white;
+		font-size: 20px;
+		background-color: #404040;
+		box-shadow: -6px -6px 12px #353535, 6px 6px 12px #212121;
+		border: 2px solid rgb(36, 36, 36);
+		margin-top: 15px;
+		padding: 10px;
+}
+.add_but:hover{
+	opacity: 0.7;
+	cursor: pointer;
+}
+.div_button_add{
+	justify-self: center;
+}
