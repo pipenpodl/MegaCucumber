@@ -46,7 +46,7 @@ Socket client <--> Socket server <--> Flask web-server <--> React
 
 ---
 
-##### Настройка стороны сервера Flask и связь с React приложением
+### Настройка стороны сервера Flask и связь с React приложением
 
 
 __React__
