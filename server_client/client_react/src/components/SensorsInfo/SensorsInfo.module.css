@@ -29,7 +29,7 @@
 
 .Water_state, .Sensors_air,.Time, .Lux, .Temp_solution{
 	color: white;
-	background-color: #212121;
+	background-color: white;
 	border-radius: 40px;
 	text-align: center;
 	box-shadow: 
@@ -62,13 +62,12 @@
 	display: grid;
 	grid-template-rows: 1fr 1fr;
 	align-items: center;
-	background-color: #5f5f5f;
+	background-color: rgb(215, 215, 215);
 	border-radius: 60px;
 	margin: 20px;
 	box-shadow: 
 		-4px -4px 8px rgba(218, 218, 218, 0.04),
 		4px 4px 8px rgba(0, 0, 0, 0.25);
-	border: 2px solid rgb(36, 36, 36);
 }
 
 .Time, .Water_state {
@@ -86,15 +85,15 @@
     box-shadow: 
 		inset -4px -4px 8px rgba(218, 218, 218, 0.1),
 		inset 4px 4px 8px rgba(0, 0, 0, 0.5);
-	border: 1px solid rgb(94, 94, 94);
+
 }
 
 .color_sensors_down {
-	background-color: #026a8a;
+	background-color: #51a4a7;
 }
 
 .color_sensors_up {
-	background-color: #99a101;
+	background-color: #e0b400;
 }
 
 .Lux, .Temp_solution, .Temperature, .Humidity {
@@ -105,7 +104,6 @@
 .custom_ts {
 	display: grid;
 	align-items: center;
-	font-size: 24px;
 }
 
 .Time, .Water_state {
@@ -117,11 +115,11 @@
 	height: 100%;
 	width: 100%;
     border-radius: 40px 1px 40px 1px;
-    background-color: #006633;
+    background-color: #058240;
     box-shadow: 
 		inset -4px -4px 8px rgba(218, 218, 218, 0.1),
 		inset 4px 4px 8px rgba(0, 0, 0, 0.5);
-    border: 1px solid rgb(94, 94, 94);
+
 }
 
 .sensors_air_color {
@@ -130,11 +128,11 @@
 	display: grid;
     align-content: center;
     border-radius: 40px 40px 1px 1px;
-    background-color:  #729825;
+    background-color:  #63a22f;
     box-shadow: 
 		inset -4px -4px 8px rgba(218, 218, 218, 0.1),
 		inset 4px 4px 8px rgba(0, 0, 0, 0.5);
-    border: 1px solid rgb(94, 94, 94);
+    border: 1px solid rgb(214, 214, 214);
 }
 
 .info_sens_air {
@@ -143,12 +141,11 @@
 	display: grid;
     align-content: center;
     border-radius: 1px 1px 40px 40px;
-    background-color: #5f5f5f;
+    background-color: rgb(215, 215, 215);
     box-shadow: 
 		inset -4px -4px 8px rgba(218, 218, 218, 0.1),
 		inset 4px 4px 8px rgba(0, 0, 0, 0.5);
-    border: 1px solid rgb(94, 94, 94);
-	font-size: 24px;
+    border: 1px solid rgb(214, 214, 214);
 }
 
 @media only screen and (max-width: 1100px) {

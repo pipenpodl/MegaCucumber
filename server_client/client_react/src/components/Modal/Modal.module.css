@@ -20,19 +20,15 @@
 	display: grid;
 	grid-gap: 10px;
 	grid-template-columns: 1fr;
-	border: 1px solid black;
 	font-size: 20px;
-	padding: 10px;
-	background-color: #404040;
+	background-color: rgb(215, 215, 215);
 	box-shadow: 
 		-4px -4px 8px rgba(218, 218, 218, 0.04),
-		4px 4px 8px rgba(0, 0, 0, 0.25);
-	border: 2px solid rgb(36, 36, 36);
+		4px 4px 8px rgba(0, 0, 0, 0.25);  
 	margin-top: 15px;
-	color: white;
+	color: rgb(0, 0, 0);
 	border-radius: 40px;
 	padding: 15px;
-
 }
 
 .er{
@@ -44,7 +40,7 @@
 }
 .add_but{
 	font-size: 20px;
-	border: 1px solid black;
+	border: 1px solid rgb(255, 255, 255);
 	padding: 5px;
 }
 .add_but{
@@ -53,13 +49,13 @@
 		height: 50px;
 		border-radius: 20px 20px 20px 20px;
 		border: none;
-		color: white;
+		color: rgb(0, 0, 0);
 		font-size: 20px;
-		background-color: #404040;
+		background-color: #ffffff;
 		box-shadow: 
 		-4px -4px 8px rgba(218, 218, 218, 0.04),
 		4px 4px 8px rgba(0, 0, 0, 0.25);
-		border: 2px solid rgb(36, 36, 36);
+		border: 1px solid rgb(195, 195, 195);
 		margin-top: 15px;
 		padding: 10px;
 }
@@ -69,4 +65,23 @@
 }
 .div_button_add{
 	justify-self: center;
+}
+
+.start {
+	border-radius: 15px;
+	border: 1px solid rgb(174, 174, 174);
+	text-align: center;
+	width: 100px;
+	height: 25px;
+	font-size: 18px;
+}
+
+.center {
+	display: grid;
+	align-items: center;
+	text-align: center;
+}
+
+.center input {
+	text-align: center;
 }

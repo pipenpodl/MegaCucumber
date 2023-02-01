@@ -49,30 +49,34 @@ const Modal = ({ visible, addNewWatering, setVisible }) => {
             <span>{validLitres}</span>
           </div>
         </div>
-        <div>
+        <div className={style.center}>
           <div>
-            <span>Начало полива</span>
+            <p>Начало полива</p>
           </div>
-
-          <input
-            type="time"
-            className={style.start}
-            value={start}
-            onChange={(event) => setStart(event.target.value)}
-          />
+          <div>
+            <input
+              type="time"
+              className={style.start}
+              value={start}
+              onChange={(event) => setStart(event.target.value)}
+            />
+          </div>
         </div>
-        <div>
+        <div className={style.center}>
           <div>
-            <span>Количество литров на полив</span>
+            <p>Количество литров на полив</p>
           </div>
 
-          <input
-            type="number"
-            value={numberOfLitres}
-            onChange={(e) => {
-              setNumberOfLitres(e.target.value);
-            }}
-          />
+          <div>
+            <input
+              type="number"
+              className={style.start}
+              value={numberOfLitres}
+              onChange={(e) => {
+                setNumberOfLitres(e.target.value);
+              }}
+            />
+          </div>
         </div>
         <div className={style.div_button_add}>
           <button className={style.add_but} onClick={() => buttonAddWatering()}>
