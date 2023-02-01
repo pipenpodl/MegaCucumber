@@ -79,7 +79,9 @@ const SettingsForm = () => {
         <ControlButton></ControlButton>
       </div>
       <div className={style.Main_water}>
-        <h1>Поливы</h1>
+        <div className={style.color_water}>
+          <p>Поливы</p>
+        </div>
           <WateringsTable
             totalCountWaterings={totalCountWaterings}
             deleteWatering={deleteWatering}

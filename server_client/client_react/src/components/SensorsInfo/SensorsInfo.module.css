@@ -7,48 +7,182 @@
 	display: grid;
 	grid-area: two;
 	grid-template-rows: 1fr 3fr 1fr;  
-  }
-  .Main_block {
+}
+
+.Main_block {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-  }
+	
+}
 
-  .Sensors_water {
+.Sensors_water {
 	display: grid;
 	grid-template-rows: 1fr 1fr;
-  }
+}
   
-  .Sensors_air {
+.Sensors_air {
 	display: grid;
 	grid-template-rows: 1fr 1fr;
 	align-content: center;
   }
 
 
-  .Water_state, .Sensors_air,.Time, .Lux, .Temp_solution{
+.Water_state, .Sensors_air,.Time, .Lux, .Temp_solution{
 	color: white;
-	background-color: #2b2b2b;
+	background-color: #212121;
 	border-radius: 40px;
-	margin: 20px;
 	text-align: center;
-	box-shadow: -6px -6px 12px #313131, 6px 6px 12px #212121;
-  }
-  .Temperature, .Humidity {
-	display: flex;
-	justify-content: center;
+	box-shadow: 
+		-4px -4px 8px rgba(218, 218, 218, 0.04),
+		4px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.Time {
+	margin-top: 60px;
+	margin-bottom: 30px;
+	margin-left: 5%;
+	margin-right: 5%;  
+}
+
+.Lux, .Temp_solution, .Sensors_air {
+	margin-top: 30px;	
+	margin-bottom: 30px;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.Water_state {
+	margin-top: 30px;
+	margin-bottom: 60px;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.Temperature, .Humidity {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
 	align-items: center;
-	background-color: #404040;
+	background-color: #5f5f5f;
 	border-radius: 60px;
 	margin: 20px;
-	box-shadow: -6px -6px 12px #353535, 6px 6px 12px #212121;
+	box-shadow: 
+		-4px -4px 8px rgba(218, 218, 218, 0.04),
+		4px 4px 8px rgba(0, 0, 0, 0.25);
 	border: 2px solid rgb(36, 36, 36);
-	font-size: 20px;
-	
-  }
+}
 
-.Time, .Lux, .Temp_solution, .Water_state {
+.Time, .Water_state {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 20px;
+}
+
+.color_sensors_up, .color_sensors_down {
+	color: white;
+	text-align: center;
+	display: grid;
+    align-content: center;
+    border-radius: 40px 40px 1px 1px;
+    box-shadow: 
+		inset -4px -4px 8px rgba(218, 218, 218, 0.1),
+		inset 4px 4px 8px rgba(0, 0, 0, 0.5);
+	border: 1px solid rgb(94, 94, 94);
+}
+
+.color_sensors_down {
+	background-color: #026a8a;
+}
+
+.color_sensors_up {
+	background-color: #99a101;
+}
+
+.Lux, .Temp_solution, .Temperature, .Humidity {
+	display: grid;
+	grid-template-rows: 0.35fr 1fr;
+}
+
+.custom_ts {
+	display: grid;
+	align-items: center;
+	font-size: 24px;
+}
+
+.Time, .Water_state {
+	display: grid;
+	grid-template-columns: 0.5fr 5fr 0.5fr;
+}
+
+.side_color {
+	height: 100%;
+	width: 100%;
+    border-radius: 40px 1px 40px 1px;
+    background-color: #006633;
+    box-shadow: 
+		inset -4px -4px 8px rgba(218, 218, 218, 0.1),
+		inset 4px 4px 8px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgb(94, 94, 94);
+}
+
+.sensors_air_color {
+	height: 100%;
+	width: 100%;
+	display: grid;
+    align-content: center;
+    border-radius: 40px 40px 1px 1px;
+    background-color:  #729825;
+    box-shadow: 
+		inset -4px -4px 8px rgba(218, 218, 218, 0.1),
+		inset 4px 4px 8px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgb(94, 94, 94);
+}
+
+.info_sens_air {
+	height: 100%;
+	width: 100%;
+	display: grid;
+    align-content: center;
+    border-radius: 1px 1px 40px 40px;
+    background-color: #5f5f5f;
+    box-shadow: 
+		inset -4px -4px 8px rgba(218, 218, 218, 0.1),
+		inset 4px 4px 8px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgb(94, 94, 94);
+	font-size: 24px;
+}
+
+@media only screen and (max-width: 1100px) {
+	.sensors_air_color{
+		font-size: 10px;
+	}
+	.Time {
+		margin-top: 30px;
+	}
+
+	.Water_state {
+		margin-bottom: 30px;
+	}
+
+	.side_color {
+		border-radius: 20px 1px 20px 1px;
+	}
+
+	.Lux, .Temp_solution, .Sensors_air {
+		margin-top: 15px;	
+		margin-bottom: 15px;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
+	.Temp_solution {
+		font-size: 10px;
+	}
+
+	.Temperature, .Humidity {
+		border-radius: 40px;
+	}
+
+	.info_sens_air {
+		border-radius: 1px 1px 30px 30px;
+	}
 }

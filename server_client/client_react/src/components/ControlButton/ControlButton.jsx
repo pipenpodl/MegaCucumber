@@ -37,78 +37,86 @@ const ControlButton = () => {
   },[]);
   return (
     <div className={style.Main_button}>
-      {connectionError !== "" ? (
-        <h1 className={style.err}>{connectionError}</h1>
-      ) : (
-        <div>
-          <h1>Управление</h1>
-          <div className={style.check}>
-            <div>
-              <p>Свет</p>
-            </div>
-            <div>
-              <label className={style.checkbox_ios}>
-                <input
-                  type="checkbox"
-                  className={style.checkbox_ios}
-                  checked={lightState}
-                  onChange={(e) => {
-                    setManual(false)
-                    isManual = false
-                    setLightState(e.target.checked)
-                    send_json({
-                      lamps_state: e.target.checked,
-                      pump_state: pumpState,
-                      manual: false,
-                    });
-                  }}
-                />
-                <span className={style.checkbox_ios_switch}></span>
-              </label>
-            </div>
-            <div>
-              <p>Насос</p>
-            </div>
-            <div>
-              <label className={style.checkbox_ios}>
-                <input
-                  type="checkbox"
-                  className={style.checkbox_ios}
-                  checked={pumpState}
-                  onChange={(e) => {
-                    setManual(false)
-                    isManual = false
-                    setPumpState(e.target.checked)
-                    send_json({
-                      lamps_state: lightState,
-                      pump_state: e.target.checked,
-                      manual: false,
-                    });
-                  }}
-                />
-                <span className={style.checkbox_ios_switch}></span>
-              </label>
-            </div>
-          </div>
-          <button
-            className={style.button_con}
-            type="button"
-            onClick={() => {
-              setManual(true)
-              isManual = true
-              send_json({
-                lamps_state: lightState,
-                pump_state: pumpState,
-                manual: true,
-              })
-            }}
-            hidden={manual}
-            
-          >
-            Вернуть
-          </button>
+      <div className={style.color_button}>
+          <p>Управление</p>
+      </div>
+      {connectionError == "" ? (
+        <div className={style.err_div}>
+          <p className={style.err}>{connectionError}</p>
         </div>
+      ) : (
+        <div className={style.button_center}>
+            <div className={style.ios_div}>
+              <div>
+                <p>Свет</p>
+              </div>
+              <div>
+                <label className={style.checkbox_ios}>
+                  <input
+                    type="checkbox"
+                    className={style.checkbox_ios}
+                    checked={lightState}
+                    onChange={(e) => {
+                      setManual(false)
+                      isManual = false
+                      setLightState(e.target.checked)
+                      send_json({
+                        lamps_state: e.target.checked,
+                        pump_state: pumpState,
+                        manual: false,
+                      });
+                    }}
+                  />
+                  <span className={style.checkbox_ios_switch}></span>
+                </label>
+              </div>
+            </div>
+              
+            <div className={style.ios_div}> 
+              <div>
+                <p>Насос</p>
+              </div>
+              <div>
+                <label className={style.checkbox_ios}>
+                  <input
+                    type="checkbox"
+                    className={style.checkbox_ios}
+                    checked={pumpState}
+                    onChange={(e) => {
+                      setManual(false)
+                      isManual = false
+                      setPumpState(e.target.checked)
+                      send_json({
+                        lamps_state: lightState,
+                        pump_state: e.target.checked,
+                        manual: false,
+                      });
+                    }}
+                  />
+                  <span className={style.checkbox_ios_switch}></span>
+                </label>
+              </div>
+             </div> 
+          </div>
       )}
+      <div className={style.return_button}>
+        <button
+              className={style.button_con}
+              type="button"
+              onClick={() => {
+                setManual(true)
+                isManual = true
+                send_json({
+                  lamps_state: lightState,
+                  pump_state: pumpState,
+                  manual: true,
+                })
+              }}
+              hidden={manual}
+            >
+              Вернуть
+          </button>
+      </div>
     </div>
   );
 };

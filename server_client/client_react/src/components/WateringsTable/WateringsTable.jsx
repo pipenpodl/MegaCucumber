@@ -1,5 +1,7 @@
 import React from "react";
 import style from "./WateringsTable.module.css";
+
+
 const WateringsTable = ({ totalCountWaterings, deleteWatering }) => {
   return (
     <div className={style.table}>
@@ -11,7 +13,7 @@ const WateringsTable = ({ totalCountWaterings, deleteWatering }) => {
   
       </div>
       {totalCountWaterings.length === 0 ? (
-        <h3 align="center">Поливы отсутствуют </h3>
+        <p align="center">Поливы отсутствуют </p>
       ) : (
         <div>
           {totalCountWaterings.map((watering) => (

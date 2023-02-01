@@ -1,29 +1,32 @@
-.table{
-	margin-top: 30px;
-	background-color: white;
-	padding: 5px;
-	font-size: 20px;
+.table {
+	background-color: rgb(223, 223, 223);
 	overflow: scroll;
+	overflow-x: hidden;
 	max-height: 460px;
 	color: black;
 }
 
 .watering_item{
 	display: grid;
-	grid-template-columns: 1fr;
-	margin-top: 10px;
-	background-color: white;
-	padding: 5px;
-	color: black;
-	background-color: #DCDCDC;
+	grid-template-columns: 1fr;		
+	margin-top: 2px;
+	margin-bottom: 2px;
+	color: rgb(255, 255, 255);
+	background-color: #707070;
+	border: 1px solid rgb(94, 94, 94);
 }
+
 .titles_item{
 	display: grid;
+	align-items: center;
 	grid-template-columns: repeat(4, 1fr);
 }
+
 .title{
 	display: grid;
+	padding: 5px;
 	grid-template-columns: repeat(4, 1fr);
+	background-color: #afafaf;
 }
 .button_drop{
 	justify-self: center;
@@ -33,13 +36,3 @@
 	cursor: pointer;
 }
 
-
-@media only screen and (max-width: 1100px) {
-	.App {
-	  grid-template-areas: 'two' 'one';
-	}
-	*{
-		  font-size: 15px;
-	  }
-  }
-  
