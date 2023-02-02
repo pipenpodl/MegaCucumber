@@ -25,7 +25,6 @@ const SensorsInfo = () => {
   return (
     <div className={style.Main_two}>
       <div className={style.Time}>
-        <div className={style.side_color}></div>
           {connectionError !== "" ? (
             <p className={style.err}>{connectionError}</p>
           ) : (
@@ -34,7 +33,6 @@ const SensorsInfo = () => {
               <h3>{data["date"]}</h3>
             </div>
           )}
-          <div className={style.side_color}></div>
       </div>
       <div className={style.Main_block}>
         <div className={style.Sensors_water}>

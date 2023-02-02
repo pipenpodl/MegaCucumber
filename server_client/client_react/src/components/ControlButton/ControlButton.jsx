@@ -46,7 +46,7 @@ const ControlButton = () => {
         </div>
       ) : (
         <div className={style.button_center}>
-            <div className={style.ios_div}>
+            <div className={style.ios_div_two}>
               <div>
                 <p>Свет</p>
               </div>
@@ -72,7 +72,7 @@ const ControlButton = () => {
               </div>
             </div>
               
-            <div className={style.ios_div}> 
+            <div className={style.ios_div_one}> 
               <div>
                 <p>Насос</p>
               </div>

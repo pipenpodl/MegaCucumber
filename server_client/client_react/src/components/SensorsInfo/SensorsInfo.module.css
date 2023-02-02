@@ -24,10 +24,9 @@
 	display: grid;
 	grid-template-rows: 1fr 1fr;
 	align-content: center;
-  }
+}
 
-
-.Water_state, .Sensors_air,.Time, .Lux, .Temp_solution{
+.Water_state, .Time, .Lux, .Temp_solution{
 	color: white;
 	background-color: white;
 	border-radius: 40px;
@@ -44,7 +43,7 @@
 	margin-right: 5%;  
 }
 
-.Lux, .Temp_solution, .Sensors_air {
+.Lux, .Temp_solution, .Temperature, .Humidity {
 	margin-top: 30px;	
 	margin-bottom: 30px;
 	margin-left: 10%;
@@ -62,9 +61,8 @@
 	display: grid;
 	grid-template-rows: 1fr 1fr;
 	align-items: center;
-	background-color: rgb(215, 215, 215);
+	background-color: rgb(255, 255, 255);
 	border-radius: 60px;
-	margin: 20px;
 	box-shadow: 
 		-4px -4px 8px rgba(218, 218, 218, 0.04),
 		4px 4px 8px rgba(0, 0, 0, 0.25);
@@ -82,10 +80,6 @@
 	display: grid;
     align-content: center;
     border-radius: 40px 40px 1px 1px;
-    box-shadow: 
-		inset -4px -4px 8px rgba(218, 218, 218, 0.1),
-		inset 4px 4px 8px rgba(0, 0, 0, 0.5);
-
 }
 
 .color_sensors_down {
@@ -106,32 +100,15 @@
 	align-items: center;
 }
 
-.Time, .Water_state {
-	display: grid;
-	grid-template-columns: 0.5fr 5fr 0.5fr;
-}
-
-.side_color {
-	height: 100%;
-	width: 100%;
-    border-radius: 40px 1px 40px 1px;
-    background-color: #058240;
-    box-shadow: 
-		inset -4px -4px 8px rgba(218, 218, 218, 0.1),
-		inset 4px 4px 8px rgba(0, 0, 0, 0.5);
-
-}
-
 .sensors_air_color {
 	height: 100%;
 	width: 100%;
+	color: white;
+	text-align: center;
 	display: grid;
     align-content: center;
     border-radius: 40px 40px 1px 1px;
     background-color:  #63a22f;
-    box-shadow: 
-		inset -4px -4px 8px rgba(218, 218, 218, 0.1),
-		inset 4px 4px 8px rgba(0, 0, 0, 0.5);
     border: 1px solid rgb(214, 214, 214);
 }
 
@@ -141,10 +118,7 @@
 	display: grid;
     align-content: center;
     border-radius: 1px 1px 40px 40px;
-    background-color: rgb(215, 215, 215);
-    box-shadow: 
-		inset -4px -4px 8px rgba(218, 218, 218, 0.1),
-		inset 4px 4px 8px rgba(0, 0, 0, 0.5);
+    background-color: rgb(255, 255, 255);
     border: 1px solid rgb(214, 214, 214);
 }
 

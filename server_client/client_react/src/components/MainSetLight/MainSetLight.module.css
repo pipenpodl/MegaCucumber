@@ -1,6 +1,6 @@
 .Main_light{
   display: grid;
-  grid-template-rows: 0.35fr 1fr;
+  grid-template-rows: 1fr 6fr;
   color: white;
   background-color: white;
   border-radius: 40px;
@@ -20,11 +20,13 @@
 }
 
 .inp{
-    background-color: #cfcfcf;
-    color: black;
-	  border: 1px solid rgb(141, 141, 141);
-    padding: 5px;
-    border-radius: 10px;
+  height: 20px;
+  background-color: #E6E5EA;
+  color: black;
+  border: 1px solid rgb(175, 175, 175);
+  padding: 5px;
+  border-radius: 10px;
+  font-weight: 600;
 }
 
 .center_light {
@@ -38,9 +40,6 @@
     align-content: center;
     border-radius: 40px 40px 1px 1px;
     background-color: #058240;
-    box-shadow: 
-		inset -4px -4px 8px rgba(218, 218, 218, 0.1),
-		inset 4px 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 
