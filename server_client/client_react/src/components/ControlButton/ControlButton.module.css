@@ -195,4 +195,12 @@ button{
 		margin-left: 15px;
    		margin-right: 15px;
 	}	
+
+	.ios_div_one {
+		margin-bottom: 20px;
+	}
+	
+	.ios_div_two {
+		margin-top: 20px;
+	}
  }
