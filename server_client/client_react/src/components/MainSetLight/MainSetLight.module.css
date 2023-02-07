@@ -1,13 +1,12 @@
 .Main_light{
   display: grid;
-  grid-template-rows: 1fr 6fr;
-  color: white;
-  background-color: white;
+  grid-template-rows: 1fr 5fr 1fr;
+  color: rgb(255, 255, 255);
+  background-color:  #262729;
   border-radius: 40px;
   text-align: center;
-  box-shadow: 
-		-4px -4px 8px rgba(218, 218, 218, 0.04),
-		4px 4px 8px rgba(0, 0, 0, 0.25);  
+  box-shadow: -8px -8px 14px rgba(255, 255, 255, 0.04),
+              8px 8px 14px rgba(0, 0, 0, 0.25);
   margin-top: 60px;
   margin-bottom: 30px;
   margin-left: 10%;
@@ -21,27 +20,36 @@
 
 .inp{
   height: 20px;
-  background-color: #E6E5EA;
-  color: black;
-  border: 1px solid rgb(175, 175, 175);
+  background-color:  #262729;
+  color: white;
+  border: 1px solid rgb(211, 211, 218);
   padding: 5px;
   border-radius: 10px;
   font-weight: 600;
 }
 
 .center_light {
-  color:black;
-  margin-bottom: 40px;
-  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  color:rgb(255, 255, 255);
+  margin-bottom: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+
 }
 
 .color_light {
     display: grid;
     align-content: center;
     border-radius: 40px 40px 1px 1px;
-    background-color: #058240;
+    background-color:  #262729;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
+.light_gap {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
 
 @media only screen and (max-width: 1100px) {
   .Main_light {
@@ -51,8 +59,16 @@
   }
 
   .center_light {
+    display: grid;
+    grid-template-columns: 1fr;
     margin-top: 20px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+
   }
+
+
 }
 
 

@@ -70,6 +70,7 @@ const Modal = ({ visible, addNewWatering, setVisible }) => {
           <div>
             <input
               type="number"
+              placeholder="0"
               className={style.start}
               value={numberOfLitres}
               onChange={(e) => {

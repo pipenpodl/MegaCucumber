@@ -82,30 +82,40 @@ const SettingsForm = () => {
         <div className={style.color_water}>
           <p>Поливы</p>
         </div>
+        <div className={style.title}>
+          <div className={style.title_center}>Номер</div>
+          <div className={style.title_center}>Начало</div>
+          <div className={style.title_center}>Кол-во литров</div>
+          <div className={style.title_center}>Удалить</div>
+        </div>
           <WateringsTable
             totalCountWaterings={totalCountWaterings}
             deleteWatering={deleteWatering}
           ></WateringsTable>
         <div className={style.block_add}>
-          <button className={style.but} type="button" onClick={() => setVisible(true)}>
-            Добавить
-          </button>
-            <button
-              className={style.but}
-              type="button"
-              disabled={blockSave}
-              onClick={() => {
-                setBackgroundColorButtonSave("");
-                sendDataToServer(
-                  {"settings": {"start": timeStart, "end": timeEnd, "waterings": totalCountWaterings}}
-                  ,
-                  "/settings"
-                );
-              }}
-              style={{ backgroundColor: backgroundColorButtonSave }}
-            >
-              Сохранить
+          <div className={style.one_add}>
+            <button className={style.but} type="button" onClick={() => setVisible(true)}>
+              Добавить
             </button>
+          </div>
+          <div className={style.two_add}>
+              <button
+                className={style.but}
+                type="button"
+                disabled={blockSave}
+                onClick={() => {
+                  setBackgroundColorButtonSave("");
+                  sendDataToServer(
+                    {"settings": {"start": timeStart, "end": timeEnd, "waterings": totalCountWaterings}}
+                    ,
+                    "/settings"
+                  );
+                }}
+                style={{ backgroundColor: backgroundColorButtonSave }}
+              >
+                Сохранить
+              </button>
+            </div>
         </div>
       </div>
     </div>

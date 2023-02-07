@@ -40,7 +40,7 @@ const ControlButton = () => {
       <div className={style.color_button}>
           <p>Управление</p>
       </div>
-      {connectionError == "" ? (
+      {connectionError !== "" ? (
         <div className={style.err_div}>
           <p className={style.err}>{connectionError}</p>
         </div>

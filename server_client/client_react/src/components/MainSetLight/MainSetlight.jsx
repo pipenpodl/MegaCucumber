@@ -44,6 +44,7 @@ const MainSetLight = ({
           />
         </div>
       </div>
+      <div className={style.light_gap}></div>
     </div>
   );
 };

@@ -1,20 +1,24 @@
 .table {
-	background-color: rgb(255, 255, 255);
-	overflow: scroll;
-	overflow-x: hidden;
-	max-height: 277px;
-	color: black;
+	background-color: #262729;
+	max-height: 200px;
+	color: rgb(255, 255, 255);
+	overflow-y: auto;
+  	scrollbar-width: auto;
 }
 
 .watering_item{
-	margin: 2px;
+	margin-top: 6px;
 	display: grid;
 	grid-template-columns: 1fr;		
-	margin-top: 2px;
-	margin-bottom: 2px;
-	color: rgb(85, 85, 85);
-	background-color: #ffffff;
+	color: rgb(255, 255, 255);
+	background-color: #262729;
 	border-bottom: 1px rgb(143, 143, 143) solid;	
+}
+
+.no_watering {
+	height: 100%;
+	display: grid;
+	align-items: center;
 }
 
 .titles_item{
@@ -23,15 +27,6 @@
 	grid-template-columns: repeat(4, 1fr);
 }
 
-.title{
-	color: rgb(84, 84, 84);
-	font-weight: 600;
-	display: grid;
-	padding: 5px;
-	grid-template-columns: repeat(4, 1fr);
-	background-color: #ffffff;
-	border-bottom: 1px rgb(143, 143, 143) solid;
-}
 .button_drop{
 	justify-self: center;
 	

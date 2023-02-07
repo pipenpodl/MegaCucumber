@@ -5,15 +5,10 @@ import style from "./WateringsTable.module.css";
 const WateringsTable = ({ totalCountWaterings, deleteWatering }) => {
   return (
     <div className={style.table}>
-      <div className={style.title}>
-        <div>Номер</div>
-        <div>Начало</div>
-        <div>Кол-во литров</div>
-        <div>Удалить</div>
-  
-      </div>
       {totalCountWaterings.length === 0 ? (
-        <p align="center">Поливы отсутствуют </p>
+        <div className={style.no_watering}>
+          <p align="center">Поливы отсутствуют </p>
+        </div>
       ) : (
         <div>
           {totalCountWaterings.map((watering) => (
